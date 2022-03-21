@@ -11,7 +11,6 @@ pages = pagination.find_all('a')
 spans = []
 
 
-
 for page in pages:
   spans.append(page.find("span"))
 
