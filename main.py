@@ -10,7 +10,6 @@ pagination = indeed_soup.find("ul",{"class":"pagination-list"})
 pages = pagination.find_all('a')
 spans = []
 
-
 for page in pages:
   spans.append(page.find("span"))
 
