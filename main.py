@@ -5,6 +5,7 @@ indeed_result = requests.get("https://www.indeed.com/jobs?q=python&limit=50")
 
 indeed_soup = BeautifulSoup(indeed_result.text,"html.parser")
 
+
 pagination = indeed_soup.find("ul",{"class":"pagination-list"})
 
 pages = pagination.find_all('a')
